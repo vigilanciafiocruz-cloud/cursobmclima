@@ -1,5 +1,5 @@
 
-# BMClima - Análise de Dados de Saúde e Clima: Estatísticas para Políticas Públicas
+# VigiSaude com R- construindo Boletins
 
 Curso ministrado no âmbito das atividades relacionadas ao projeto 
 [Relationship between climate variables and the incidence of acute bronchiolitis in children under five years old in Brazilian municipalities in the last 20 years](https://osf.io/edwbs/)
