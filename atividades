@@ -1,0 +1,132 @@
+Atividades do Curso de R 
+Nome: Lívia de Oliveira Rodrigues 
+Matrícula: 25013458 
+
+Exercício 1 
+
+Este exercício visa familiarizar os alunos com as funções embutidas do R para 
+manipulação e análise de dados numéricos, além de introduzir conceitos básicos 
+de estatística descritiva. Ao praticar com dados reais, os alunos poderão aplicar 
+seus conhecimentos de forma prática e relevante. 
+
+notas <- c (8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+
+1. Organização: 
+
+• Ordene as notas em ordem crescente. 
+
+Notas<- c (8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+Ordem_crescente <- sort(Notas) 
+print (Ordem_crescente)
+
+• Inverta a ordem das notas, mostrando-as da maior para a menor.
+
+Notas<- c(8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+Inv_ordem <- sort(Notas, decreasing=TRUE) 
+print(Inv_ordem) 
+
+1- Estatísticas Descritivas: 
+
+• Calcule a média das notas. 
+
+Notas<- c (8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+media <- mean(Notas) 
+print(media) 
+
+• Encontre a mediana das notas. 
+
+Notas<- c(8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+mediana <- median(Notas) 
+print(mediana) 
+
+• Determine a nota mais alta e a nota mais baixa. 
+
+Notas<- c(8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+menor_nota <- min(Notas) 
+maior_nota<- max(Notas) 
+print(menor_nota) 
+print(maior_nota) 
+
+• Calcule o desvio padrão das notas. 
+
+Notas<- c(8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+desvio_padrao <- sd(Notas) 
+print(desvio_padrao) 
+
+2- Frequência: 
+
+Crie uma tabela de frequências para mostrar quantas vezes cada nota 
+aparece. 
+
+Notas<- c (8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+tabela <- table(Notas) 
+print(tabela) 
+
+Desafio Extra: 
+
+Crie um novo vetor chamado notas_arredondadas que contenha as notas 
+arredondadas para uma casa decimal. Calcule a média das notas 
+arredondadas e compare com a média das notas originais. 
+
+Notas<- c(8.5, 7.0, 9.2, 6.8, 8.0, 7.5, 9.0, 5.5, 8.8, 7.2) 
+notas_arredondadas <- round(Notas,0) 
+media<-mean(Notas) 
+media_arredondada<-mean(notas_arredondadas) 
+print(media) 
+print(media_arredondada) 
+
+Exercício 2 
+
+Carregar o conjunto de dados: 
+
+Utilize a função data() para carregar o conjunto de dados mtcars em seu 
+ambiente de trabalho. 
+
+Calcular estatísticas descritivas: 
+
+dados<-str(mtcars) 
+summary(dados) 
+mean(mtcars$carb) 
+median(mtcars$carb) 
+sd(mtcars$carb) 
+min(mtcars$carb) 
+max(mtcars$carb)
+
+Ordenar os dados: 
+
+Selecione uma variável numérica, por exemplo, hp (potência do motor). 
+Utilize a função sort() para ordenar os valores dessa variável em ordem 
+crescente. 
+
+dados<-str(mtcars) 
+summary(dados) 
+str(mtcars$mpg) 
+rev(mtcars$mpg) 
+
+Criar uma sequência de números: 
+
+sequencia<-seq(1,10,2) 
+print(sequencia) 
+
+Crie outra sequência de números de 5 a 15, com incrementos de 3. 
+
+sequencia<-seq(5,15,3) 
+print(sequencia) 
+
+Repetir elementos: 
+
+Utilize a função rep() para criar um vetor com o número 7 repetido 4 vezes. 
+
+repetir<-rep(7,4) 
+print(repetir) 
+
+Crie outro vetor com a letra 'a' repetida 10 vezes. 
+repetir<-rep('a',10) 
+print(repetir) 
+
+Converter entre maiúsculas e minúsculas: 
+
+dados<-str(mtcars) 
+summary(dados) 
+toupper(mtcars$cyl) 
+tolower(mtcars$cyl)
